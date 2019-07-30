@@ -8,6 +8,6 @@
     <title>Welcome</title>
 </head>
 <body>
-    <h1>Welcom jsp</h1>
+    <h1>Welcom ${user}</h1>
 </body>
 </html>
