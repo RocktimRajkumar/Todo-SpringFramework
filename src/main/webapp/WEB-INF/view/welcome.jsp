@@ -8,7 +8,7 @@
     <title>Welcome</title>
 </head>
 <body>
-    <h1>Welcom ${user}</h1>
+    <h1>Welcom ${helloMessage}</h1>
     <h1>${welcomeMessage}</h1>
 </body>
 </html>
