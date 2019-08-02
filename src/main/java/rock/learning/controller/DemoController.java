@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import rock.learning.service.DemoService;
 
@@ -30,10 +31,10 @@ public class DemoController {
         return "hello";
     }
 
-    //http://localhost:8080/todo-list/welcome
+    //http://localhost:8080/todo-list/welcome?user=Thanos
     @GetMapping("welcome")
-    public String welcome(Model model){
-        model.addAttribute("helloMessage",demoService.getHelloMessage("Thanos"));
+    public String welcome(@RequestParam String user, Model model){
+        model.addAttribute("helloMessage",demoService.getHelloMessage(user));
         log.info("model={}",model);
         //prefix + name + suffix
         //WEB-INF/view/welcome.jsp
