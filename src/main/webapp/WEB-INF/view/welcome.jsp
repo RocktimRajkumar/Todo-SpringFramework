@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Welcom ${helloMessage}</h1>
+    <h2>Age is ${age}</h2>
     <h1>${welcomeMessage}</h1>
 </body>
 </html>

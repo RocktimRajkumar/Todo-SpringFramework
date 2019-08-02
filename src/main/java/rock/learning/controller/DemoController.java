@@ -31,10 +31,11 @@ public class DemoController {
         return "hello";
     }
 
-    //http://localhost:8080/todo-list/welcome?user=Thanos
+    //http://localhost:8080/todo-list/welcome?user=Thanos&age=25
     @GetMapping("welcome")
-    public String welcome(@RequestParam String user, Model model){
+    public String welcome(@RequestParam String user, @RequestParam String age, Model model){
         model.addAttribute("helloMessage",demoService.getHelloMessage(user));
+        model.addAttribute("age",age);
         log.info("model={}",model);
         //prefix + name + suffix
         //WEB-INF/view/welcome.jsp
