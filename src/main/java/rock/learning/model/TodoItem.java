@@ -12,13 +12,13 @@ public class TodoItem {
     // ==== Fields ====
     private int id;
     private String title;
-    private String detais;
+    private String details;
     private LocalDate deadline;
 
     // ==== constructor ====
-    public TodoItem(String title, String detais, LocalDate deadline) {
+    public TodoItem(String title, String details, LocalDate deadline) {
         this.title = title;
-        this.detais = detais;
+        this.details = details;
         this.deadline = deadline;
     }
 }
