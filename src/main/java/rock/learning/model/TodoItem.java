@@ -63,4 +63,14 @@ public class TodoItem {
     public int hashCode() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "TodoItem{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", detais='" + detais + '\'' +
+                ", deadline=" + deadline +
+                '}';
+    }
 }
