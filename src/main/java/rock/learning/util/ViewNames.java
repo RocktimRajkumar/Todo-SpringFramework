@@ -1,4 +1,10 @@
 package rock.learning.util;
 
-public class ViewNames {
+public final class ViewNames {
+
+    // ==== constant ====
+    public static final String ITEMS_LIST = "items_list";
+
+    // ==== constructor =====
+    private ViewNames(){}
 }
