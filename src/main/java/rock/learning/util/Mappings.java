@@ -1,4 +1,13 @@
 package rock.learning.util;
 
-public class Mappings {
+public final class Mappings {
+
+    // === constants ===
+    public static final String ITEMS = "items";
+
+    // === constructor ===
+    private Mappings() {
+    }
+
+
 }
