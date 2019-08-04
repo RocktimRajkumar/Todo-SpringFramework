@@ -2,6 +2,7 @@ package rock.learning.model;
 
 import lombok.NonNull;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -14,7 +15,9 @@ public class TodoData {
 
     // ==== constructors ====
     public TodoData() {
-
+        addItem(new TodoItem("Blockchain","Distributed Ledge", LocalDate.now()));
+        addItem(new TodoItem("React JS","JavaScript Library", LocalDate.now()));
+        addItem(new TodoItem("Spring Boot","Micro Service", LocalDate.now()));
     }
 
     // ==== public methods ====
